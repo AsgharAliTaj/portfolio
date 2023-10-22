@@ -7,6 +7,8 @@ import {
   FaLaptopCode,
 } from 'react-icons/fa';
 
+import {FaPenToSquare} from 'react-icons/fa6'
+
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {AiFillGithub} from 'react-icons/ai';
 
@@ -59,8 +61,6 @@ const DropDownMenu = () => {
     let handler = (e) => {
       if (!menuRef.current.contains(e.target)) {
         setDisplay(false);
-        // console.log(menuRef.current);
-        // console.log(display);
       }
     };
     document.addEventListener("mousedown", handler);
@@ -88,9 +88,9 @@ const DropDownMenu = () => {
 const MenuItems = () => {
   return (
     <>
-<a><li className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md">Works</li></a>
+<a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md"><li> <FaPenToSquare className="inline-block pb-1" size='22' />Works</li></a>
 
-      <a href="https://github.com/AsgharAliTaj/portfolio" target="_blank"><li className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600  rounded-md"><AiFillGithub className="dark:text-gray-200 dark:hover:text-gray-200 text-gray-900 inline-block pb-1" size='22'/>Source</li></a>
+      <a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md" href="https://github.com/AsgharAliTaj/portfolio" target="_blank"><li><AiFillGithub className="inline-block pb-1" size='22'/>Source</li></a>
     </>
   )
 }
