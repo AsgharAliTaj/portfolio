@@ -1,16 +1,15 @@
 const Body = () => {
   return (
-    <div className=" pt-[62px] mx-auto px-[16px] w-[525px]">
-
-    <div className="flex items-center justify-center text-gray-700 w-auto ">
+    <article className="pt-[60px] max-w-xl m-auto px-[20px]">
+    <div className="flex items-center justify-center text-gray-700 w-auto">
 
       <div className="px-2 text-center justify-center font-normal tracking-tight p-[12px] w-full rounded-md  bg-white shadow-sm dark:text-neutral-300 dark:bg-neutral-700">Hello, I am Asghar Ali Taj a software developer.</div>
     </div>
     
-    <div className="flex mt-[10px] gap-[10px] md:gap-[20px] justify-between text-gray-700 dark:text-neutral-300">
-    <div className=" basis-3/4">
+    <div className="flex flex-col md:flex-wrap mt-[10px] gap-[10px] md:gap-[20px] justify-between text-gray-700 dark:text-neutral-300">
+    <div className="basis-3/4">
       <h1 className="text-[30px] font-bold">Asghar Ali Taj</h1>
-      <p>  Digital Craftsman (Developer / Designer)</p>
+      <p>Digital Craftsman (Developer / Designer)</p>
     </div>
 
     <div className="p-1">
@@ -21,7 +20,7 @@ const Body = () => {
 
     </div>
 
-    </div>
+    </article>
   )
 }
 
