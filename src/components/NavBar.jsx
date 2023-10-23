@@ -16,12 +16,12 @@ import {AiFillGithub} from 'react-icons/ai';
 const NavBar = () => {
   return (
 <nav className="fixed w-full bg-transparent shadow-md">
-  <div className="m-auto flex md:w-[786px]  items-center justify-between px-3 py-4">
+  <div className="m-auto flex md:w-[786px]  items-center justify-between px-3 py-2">
     <div className="flex mr-8 gap-1">
       <span><FaLaptopCode className="dark:text-neutral-200" size ='25' /> </span>
-      <p className="font-sans font-bold  text-[17px] tracking-tight text-gray-900 dark:text-gray-200">Asghar Ali Taj</p>
+      <p className="font-sans font-bold  text-[17px] tracking-tighter text-gray-900 dark:text-gray-200">Asghar Ali Taj</p>
     </div>
-    <ul className="hidden grow justify-start gap-6 text-gray-900 dark:text-gray-200 md:flex">
+    <ul className="hidden grow justify-start gap-6 text-gray-900 dark:text-gray-200 md:flex text-[14px]">
       <MenuItems />
     </ul>
     <div className="flex gap-5">
@@ -88,9 +88,9 @@ const DropDownMenu = () => {
 const MenuItems = () => {
   return (
     <>
-<a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md"><li> <FaPenToSquare className="inline-block pb-1" size='22' />Works</li></a>
+<a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md"><li> <FaPenToSquare className="inline-block pb-1" size='18' />Works</li></a>
 
-      <a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md" href="https://github.com/AsgharAliTaj/portfolio" target="_blank"><li><AiFillGithub className="inline-block pb-1" size='22'/>Source</li></a>
+      <a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md" href="https://github.com/AsgharAliTaj/portfolio" target="_blank"><li><AiFillGithub className="inline-block pb-1" size='18'/>Source</li></a>
     </>
   )
 }
