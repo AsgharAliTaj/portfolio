@@ -15,13 +15,13 @@ import {AiFillGithub} from 'react-icons/ai';
 
 const NavBar = () => {
   return (
-<nav className="fixed w-full bg-transparent shadow-md">
-  <div className="m-auto flex md:w-[786px]  items-center justify-between px-3 py-2">
+<nav className="fixed w-full  shadow-md ">
+  <div className="m-auto flex  items-center justify-between px-5 md:px-10 py-3 md:py-3">
     <div className="flex mr-8 gap-1">
-      <span><FaLaptopCode className="dark:text-neutral-200" size ='25' /> </span>
+      <span><FaLaptopCode className="dark:text-neutral-200" size ='24' /> </span>
       <p className="font-sans font-bold  text-[17px] tracking-tighter text-gray-900 dark:text-gray-200">Asghar Ali Taj</p>
     </div>
-    <ul className="hidden grow justify-start gap-6 text-gray-900 dark:text-gray-200 md:flex text-[14px]">
+    <ul className="hidden grow justify-start gap-6 text-gray-900 dark:text-gray-200 md:flex text-[13px]">
       <MenuItems />
     </ul>
     <div className="flex gap-5">

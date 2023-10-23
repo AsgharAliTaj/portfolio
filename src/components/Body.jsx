@@ -1,21 +1,19 @@
 const Body = () => {
   return (
-    <article className="pt-[60px] max-w-xl m-auto px-[20px]">
+    <article className="pt-[60px] md:pt-[65px] max-w-[535px] m-auto px-[20px]">
     <div className="flex items-center justify-center text-gray-700 w-auto">
 
-      <div className="px-2 text-center justify-center font-normal tracking-tight p-[12px] w-full rounded-md  bg-white shadow-sm dark:text-neutral-300 dark:bg-neutral-700">Hello, I am Asghar Ali Taj a software developer.</div>
+      <div className="px-2 text-center justify-center font-normal tracking-tight p-[10px] w-full rounded-md  bg-white shadow-sm dark:text-white dark:bg-neutral-700">Hello, I am  a software developer from Pakistan.</div>
     </div>
     
-    <div className="flex flex-col md:flex-wrap mt-[10px] gap-[10px] md:gap-[20px] justify-between text-gray-700 dark:text-neutral-300">
-    <div className="basis-3/4">
-      <h1 className="text-[30px] font-bold">Asghar Ali Taj</h1>
-      <p>Digital Craftsman (Developer / Designer)</p>
+    <div className="md:flex mt-[20px] md:justify-between text-gray-700 dark:text-white">
+    <div className="md:basis-3/4 ">
+      <h1 className="text-3xl md:text-4xl font-bold">Asghar Ali Taj</h1>
+      <p className="text-md">Digital Craftsman (Developer / Designer)</p>
     </div>
 
-    <div className="p-1">
-
-    <img src="" alt="" className="rounded-full w-[100px] h-[100px] bg-purple-500 shrink-0 border border-sm basis-1/4" />
-
+    <div className="flex justify-center md:block pt-5  md:p-1">
+    <img src="" alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border border-md  md:basis-1/4" />
     </div>
 
     </div>

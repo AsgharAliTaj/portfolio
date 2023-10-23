@@ -8,6 +8,8 @@ function App() {
       <NavBar />
       <div className="">
         <Body />
+        <Body />
+        <Body />
       </div>
     </div>
   )
