@@ -1,9 +1,9 @@
 const Body = () => {
   return (
     <article className="pt-[60px] md:pt-[65px] max-w-[535px] m-auto px-[20px]">
-    <div className="flex items-center justify-center text-gray-700 w-auto">
+    <div className="flex items-center justify-center w-auto">
 
-      <div className="px-2 text-center justify-center font-normal tracking-tight p-[10px] w-full rounded-md  bg-white shadow-sm dark:text-white dark:bg-neutral-700">Hello, I am  a software developer from Pakistan.</div>
+      <div className="px-2 text-center justify-center font-normal tracking-tight p-[10px] w-full rounded-md shadow-sm  bg-profile-heroLight dark:bg-profile-heroDark">Hello, I&apos;m a software developer from Pakistan.</div>
     </div>
     
     <div className="md:flex mt-[20px] md:justify-between text-gray-700 dark:text-white">
@@ -15,9 +15,7 @@ const Body = () => {
     <div className="flex justify-center md:block pt-5  md:p-1">
     <img src="" alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border border-md  md:basis-1/4" />
     </div>
-
     </div>
-
     </article>
   )
 }

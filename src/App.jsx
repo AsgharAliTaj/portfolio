@@ -4,14 +4,15 @@ import Body from "./components/Body";
 function App() {
 
   return (
-    <div className="bg-orange-50 dark:bg-neutral-800 min-h-screen font-sans">
+    <main className="bg-profile-light dark:bg-profile-dark min-h-screen font-sans text-profile-textLight dark:text-profile-textDark">
       <NavBar />
       <div className="">
         <Body />
         <Body />
         <Body />
+        <Body />
       </div>
-    </div>
+    </main>
   )
 }
 
