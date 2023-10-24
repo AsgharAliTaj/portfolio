@@ -1,5 +1,9 @@
 import {MdOutlineWorkHistory} from 'react-icons/md';
 import {FaPenToSquare} from 'react-icons/fa6';
+import {GiTechnoHeart} from 'react-icons/gi';
+
+import {AiFillHtml5} from 'react-icons/ai';
+
 import ProfilePic from '../assets/profile_pic.jpg';
 
 const Body = () => {
@@ -19,6 +23,7 @@ const Body = () => {
       <ProfilePicture />
     </div>
       <Work />
+     <Technologies />
     </article>
   )
 }
@@ -26,7 +31,7 @@ const Body = () => {
 const ProfilePicture = () => {
   return (
 <div className="flex justify-center md:block pt-5 md:p-1">
-    <img src={ProfilePic} alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border-[1px] dark:border-gray-200 border-gray-300 shadow-md  md:basis-1/4" />
+    <img src={ProfilePic} alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border-[2px] border dark:border-gray-500 border-white shadow-md  md:basis-1/4" />
     </div>
   )
 }
@@ -44,11 +49,28 @@ const Work = () => {
   )
 }
 
+const Technologies = () => {
+  return (
+    <div className='mt-[24px]'>
+    <div className="flex justify-center">
+
+    <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
+
+    </div>
+
+    <div className="flex flex-row justify-center mt-[5px] ">
+    <AiFillHtml5 size='30' className="text-orange-400" alt="html5" />
+
+    </div>
+    </div>
+  )
+
+}
+
 const Bio = () => {
   return (
     <div>
     </div>
-
   )
 }
 
