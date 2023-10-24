@@ -16,14 +16,14 @@ const Body = () => {
     <article className="pt-[60px] md:pt-[65px] max-w-[535px] m-auto px-[20px]">
 
     <div className="flex items-center justify-center w-auto">
-      <div className="px-2 text-center justify-center font-normal tracking-tight p-[10px] w-full rounded-md shadow-sm  bg-profile-heroLight dark:bg-profile-heroDark">Hello, I&apos;m a software developer from Pakistan.
+      <div className="px-2 text-md text-center justify-center font-normal tracking-tight p-[10px] w-full rounded-md shadow-sm  bg-profile-heroLight dark:bg-profile-heroDark">Hello, I&apos;m a software developer from Pakistan.
       </div>
     </div>
     
     <div className="md:flex mt-[20px] md:justify-between">
     <div className="md:basis-3/4 ">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">Asghar Ali Taj</h1>
-      <p className="text-md">Digital Craftsman (Developer / Designer)</p>
+      <p className="">Digital Craftsman (Developer / Designer)</p>
     </div>
       <ProfilePicture />
     </div>
@@ -36,7 +36,7 @@ const Body = () => {
 const ProfilePicture = () => {
   return (
 <div className="flex justify-center md:block pt-5 md:p-1">
-    <img src={ProfilePic} alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border-[2px] border dark:border-gray-500 border-white shadow-md  md:basis-1/4" />
+    <img src={ProfilePic} alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border-[2px] border border-white shadow-md  md:basis-1/4" />
     </div>
   )
 }
@@ -57,46 +57,42 @@ const Work = () => {
 const Technologies = () => {
   return (
     <div className='mt-[24px]'>
+
     <div className="flex flex-col justify-center items-center">
     
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
   </div>
 
-    <div className="flex-row align-center justify-center mt-[15px] ">
-    <p className="font-bold text-md">Frontend 
-
-      <AiFillHtml5 size='25' className=" inline-block text-orange-400" />
-      <FaCss3Alt size='25' className=" inline-block text-orange-400" />
-      <BiLogoJavascript size='25' className=" inline-block text-orange-400"  />
-      <GrReactjs size='25' className=" inline-block text-orange-400"  />
-      <FaBootstrap size='25' className=" inline-block text-orange-400"  />
-      <SiChakraui size='25' className=" inline-block text-orange-400" />
-      <BiLogoTailwindCss size='25' className=" inline-block text-orange-400" />
-    </p>
-
+    <div className="flex flex-wrap gap-2  mt-[15px]">
+    <p className="basis-1/6 font-bold">Frontend</p>
+      <AiFillHtml5 size='25' className="text-frontend-html" />
+      <FaCss3Alt size='25' className="text-frontend-css" />
+      <BiLogoJavascript size='25' className="text-frontend-js" />
+      <GrReactjs size='25' className="text-frontend-react"  />
+      <FaBootstrap size='25' className="text-frontend-bootstrap"  />
+      <SiChakraui size='25' className="text-frontend-chakraUi" />
+      <BiLogoTailwindCss size='25' className="text-frontend-tailwind " />
     </div>
 
-    <div className="flex flex-row  mt-[15px]">
-    <p className="flex flex-wrap gap-1 font-bold">Backend 
-      <BiLogoNodejs size='25' className=" inline-block text-orange-400"/>
-      <FaGolang size='28' className=" inline-block text-orange-400" />
-      <BiLogoPhp size='25' className=" inline-block text-orange-400"/>
-      <FaLaravel size='22' className=" inline-block text-orange-400"/>
-    </p>
+    <div className="flex flex-wrap gap-2 mt-[15px]">
+    <p className="basis-1/6 font-bold">Backend</p>
+      <BiLogoNodejs size='25' className="text-backend-node "/>
+      <FaGolang size='28' className="text-backend-go " />
+      <BiLogoPhp size='25' className="text-backend-php "/>
+      <FaLaravel size='22' className="text-backend-laravel "/>
     </div>
     
-    <div className="flex flex-row  mt-[15px]">
-    <p className="flex flex-wrap gap-1 font-bold">Database 
-      <BiLogoPostgresql size='25' className="inline-block text-orange-400"/>
-      <BiLogoMongodb size='25' className="inline-block text-orange-400"/>
-      <SiMysql size='25' className="inline-block text-orange-400"/>
-    </p>
+    <div className="flex flex-wrap gap-2 mt-[15px]">
+    <p className="basis-1/6 font-bold">Database</p>
+      <BiLogoPostgresql size='25' className="text-database-postgresql "/>
+      <BiLogoMongodb size='25' className="text-database-mongodb "/>
+      <SiMysql size='25' className="text-databse-mysql "/>
     </div>
-    <div className="flex flex-row  mt-[15px]">
-    <p className="flex flex-wrap gap-1 font-bold">Utilities
-      <BsGit size='25' className="inline-block text-orange-400"/>
-      <FaDocker size='25' className="inline-block text-orange-400"/>
-    </p>
+
+    <div className="flex flex-wrap gap-2  mt-[15px]">
+    <p className="basis-1/6 font-bold">Utilities</p>
+      <BsGit size='25' className=" text-utils-git "/>
+      <FaDocker size='25' className="text-utils-docker "/>
     </div>
     </div>
   )
