@@ -1,8 +1,13 @@
 import {MdOutlineWorkHistory} from 'react-icons/md';
-import {FaPenToSquare} from 'react-icons/fa6';
+import {FaPenToSquare , FaGolang} from 'react-icons/fa6';
 import {GiTechnoHeart} from 'react-icons/gi';
-
+import {FaCss3Alt} from 'react-icons/fa';
+import {BiLogoTailwindCss, BiLogoJavascript, BiLogoNodejs, BiLogoPhp, BiLogoPostgresql, BiLogoMongodb} from 'react-icons/bi';
+import {FaBootstrap, FaLaravel , FaDocker} from'react-icons/fa';
+import {GrReactjs} from 'react-icons/gr'
+import {SiChakraui,  SiMysql} from 'react-icons/si'
 import {AiFillHtml5} from 'react-icons/ai';
+import {BsGit} from 'react-icons/bs';
 
 import ProfilePic from '../assets/profile_pic.jpg';
 
@@ -52,15 +57,46 @@ const Work = () => {
 const Technologies = () => {
   return (
     <div className='mt-[24px]'>
-    <div className="flex justify-center">
-
+    <div className="flex flex-col justify-center items-center">
+    
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
+  </div>
+
+    <div className="flex-row align-center justify-center mt-[15px] ">
+    <p className="font-bold text-md">Frontend 
+
+      <AiFillHtml5 size='25' className=" inline-block text-orange-400" />
+      <FaCss3Alt size='25' className=" inline-block text-orange-400" />
+      <BiLogoJavascript size='25' className=" inline-block text-orange-400"  />
+      <GrReactjs size='25' className=" inline-block text-orange-400"  />
+      <FaBootstrap size='25' className=" inline-block text-orange-400"  />
+      <SiChakraui size='25' className=" inline-block text-orange-400" />
+      <BiLogoTailwindCss size='25' className=" inline-block text-orange-400" />
+    </p>
 
     </div>
 
-    <div className="flex flex-row justify-center mt-[5px] ">
-    <AiFillHtml5 size='30' className="text-orange-400" alt="html5" />
-
+    <div className="flex flex-row  mt-[15px]">
+    <p className="flex flex-wrap gap-1 font-bold">Backend 
+      <BiLogoNodejs size='25' className=" inline-block text-orange-400"/>
+      <FaGolang size='28' className=" inline-block text-orange-400" />
+      <BiLogoPhp size='25' className=" inline-block text-orange-400"/>
+      <FaLaravel size='22' className=" inline-block text-orange-400"/>
+    </p>
+    </div>
+    
+    <div className="flex flex-row  mt-[15px]">
+    <p className="flex flex-wrap gap-1 font-bold">Database 
+      <BiLogoPostgresql size='25' className="inline-block text-orange-400"/>
+      <BiLogoMongodb size='25' className="inline-block text-orange-400"/>
+      <SiMysql size='25' className="inline-block text-orange-400"/>
+    </p>
+    </div>
+    <div className="flex flex-row  mt-[15px]">
+    <p className="flex flex-wrap gap-1 font-bold">Utilities
+      <BsGit size='25' className="inline-block text-orange-400"/>
+      <FaDocker size='25' className="inline-block text-orange-400"/>
+    </p>
     </div>
     </div>
   )
