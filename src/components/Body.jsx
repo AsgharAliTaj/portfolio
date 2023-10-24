@@ -1,5 +1,6 @@
 import {MdOutlineWorkHistory} from 'react-icons/md';
-import {FaPenToSquare} from 'react-icons/fa6'
+import {FaPenToSquare} from 'react-icons/fa6';
+import ProfilePic from '../assets/profile_pic.jpg';
 
 const Body = () => {
   return (
@@ -10,18 +11,23 @@ const Body = () => {
       </div>
     </div>
     
-    <div className="md:flex mt-[20px] md:justify-between text-gray-700 dark:text-white">
+    <div className="md:flex mt-[20px] md:justify-between">
     <div className="md:basis-3/4 ">
-      <h1 className="text-3xl md:text-4xl font-bold">Asghar Ali Taj</h1>
+      <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">Asghar Ali Taj</h1>
       <p className="text-md">Digital Craftsman (Developer / Designer)</p>
     </div>
-
-    <div className="flex justify-center md:block pt-5  md:p-1">
-    <img src="" alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border border-md  md:basis-1/4" />
-    </div>
+      <ProfilePicture />
     </div>
       <Work />
     </article>
+  )
+}
+
+const ProfilePicture = () => {
+  return (
+<div className="flex justify-center md:block pt-5 md:p-1">
+    <img src={ProfilePic} alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border-[1px] dark:border-gray-200 border-gray-300 shadow-md  md:basis-1/4" />
+    </div>
   )
 }
 
@@ -35,7 +41,6 @@ const Work = () => {
       <button className="text-[15px] tracking-tighter dark:text-profile-dark text-profile-light bg-teal-600 dark:bg-teal-300 hover:dark:bg-teal-400 hover:bg-teal-700 px-3 py-2 rounded-md hover:mouse-cursor font-bold">My Protpolio <FaPenToSquare className="inline-block mx-[3px] mb-[3px]" size='15' /> </button>
     </div>
     </div>
-
   )
 }
 
