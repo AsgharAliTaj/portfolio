@@ -15,7 +15,7 @@ import {AiFillGithub} from 'react-icons/ai';
 
 const NavBar = () => {
   return (
-<nav className="fixed w-full  shadow-md h-auto bg-red-100/10 dark:bg-slate-200/15">
+<nav className="fixed w-full shadow-sm h-auto bg-white/30 dark:bg-profile-dark/50">
   <div className="mx-auto flex  items-center max-w-[768px] justify-between px-5 md:px-10 py-2 md:py-2">
     <div className="flex mr-8 gap-1">
       <span><FaLaptopCode size ='24'/></span>
