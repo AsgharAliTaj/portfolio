@@ -6,9 +6,7 @@ function App() {
   return (
     <main className="bg-profile-light dark:bg-profile-dark min-h-screen font-sans text-profile-textLight dark:text-profile-textDark">
       <NavBar />
-      <div className="">
         <Body />
-      </div>
     </main>
   )
 }

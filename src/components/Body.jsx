@@ -1,4 +1,4 @@
-import {MdOutlineWorkHistory} from 'react-icons/md';
+import {MdOutlineWorkHistory, MdCastForEducation} from 'react-icons/md';
 import {FaPenToSquare , FaGolang} from 'react-icons/fa6';
 import {GiTechnoHeart} from 'react-icons/gi';
 import {FaCss3Alt} from 'react-icons/fa';
@@ -29,6 +29,7 @@ const Body = () => {
     </div>
       <Work />
      <Technologies />
+    <Bio />
     </article>
   )
 }
@@ -46,7 +47,7 @@ const Work = () => {
   return (
     <div className="mt-[24px]">
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Work<MdOutlineWorkHistory className="inline-block mx-[3px] mb-[3px]" size='20' /> </h3>
-    <p className="tracking-tight text-[15px]  font-normal text-justify leading-relaxed indent-[16px]   hyphens-auto">Asghar Ali Taj is a full stack developter  and a freelancer using several cutting edge technologies of the present. He likes to plan everything from scratch and use minimal and consistent approach to the problems of both real-life and coding. When he is not working on a project, He enjoys watching anime, play game, hangout with friends and family. Currently looking for a job.</p>
+    <p className="tracking-tight text-[16px]  font-normal text-justify leading-relaxed indent-[16px]   hyphens-auto">Asghar Ali Taj is a full stack developer and a freelancer using several cutting edge technologies of the present. He likes to plan everything from scratch and use minimal and consistent approach to the problems of both real-life and coding. When he is not working on a project, He enjoys watching anime, playing games, reading books, hangout with friends and family.</p>
     <div className="flex justify-center align-center mt-3">
       <button className="text-[15px] tracking-tighter dark:text-profile-dark text-profile-light bg-teal-600 dark:bg-teal-300 hover:dark:bg-teal-400 hover:bg-teal-700 px-3 py-2 rounded-md hover:mouse-cursor font-bold">My Protpolio <FaPenToSquare className="inline-block mx-[3px] mb-[3px]" size='15' /> </button>
     </div>
@@ -64,7 +65,7 @@ const Technologies = () => {
   </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
-    <p className="basis-1/6 font-bold">Frontend</p>
+    <p className="basis-1/6 ">Frontend</p>
       <AiFillHtml5 size='25' className="text-frontend-html" />
       <FaCss3Alt size='25' className="text-frontend-css" />
       <BiLogoJavascript size='25' className="text-frontend-js" />
@@ -75,7 +76,7 @@ const Technologies = () => {
     </div>
 
     <div className="flex flex-wrap gap-2 mt-[15px]">
-    <p className="basis-1/6 font-bold">Backend</p>
+    <p className="basis-1/6 ">Backend</p>
       <BiLogoNodejs size='25' className="text-backend-node "/>
       <FaGolang size='28' className="text-backend-go " />
       <BiLogoPhp size='25' className="text-backend-php "/>
@@ -83,14 +84,14 @@ const Technologies = () => {
     </div>
     
     <div className="flex flex-wrap gap-2 mt-[15px]">
-    <p className="basis-1/6 font-bold">Database</p>
+    <p className="basis-1/6">Database</p>
       <BiLogoPostgresql size='25' className="text-database-postgresql "/>
       <BiLogoMongodb size='25' className="text-database-mongodb "/>
       <SiMysql size='25' className="text-databse-mysql "/>
     </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
-    <p className="basis-1/6 font-bold">Utilities</p>
+    <p className="basis-1/6">Utilities</p>
       <BsGit size='25' className=" text-utils-git "/>
       <FaDocker size='25' className="text-utils-docker "/>
     </div>
@@ -101,9 +102,20 @@ const Technologies = () => {
 
 const Bio = () => {
   return (
-    <div>
+    <div className="mt-[24px]">
+
+    <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Bio<MdCastForEducation className="inline-block mx-[3px] mb-[3px]" size='20' /> </h3>
     </div>
   )
+}
+
+const Likes = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+
 }
 
 export default Body;

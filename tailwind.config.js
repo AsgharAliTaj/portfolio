@@ -7,9 +7,6 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
-       fontFamily: {
-        display: ['"M PLUS Rounded 1c"'],
-    },
       colors: {
         'profile': {
           light: '#f0e7db',
