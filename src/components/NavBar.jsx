@@ -76,7 +76,7 @@ const DropDownMenu = () => {
     <GiHamburgerMenu className="dark:text-gray-200 text-gray-900 hover:cursor-pointer item-center" size='20'/>
     </button>
 
-  <div className={`${ display ? 'block': 'hidden'} z-10 rounded-lg w-44  absolute top-15 right-10 shadow-lg`}>
+  <div className={`${ display ? 'block': 'hidden'} z-10 rounded-lg w-44  absolute top-15 right-10 shadow-lg dark:bg-cyan-700 bg-pink-300`}>
     <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
     <MenuItems />
     </ul>
