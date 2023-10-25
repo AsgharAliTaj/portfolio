@@ -65,7 +65,7 @@ const Technologies = () => {
   </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
-    <p className="basis-1/6 ">Frontend</p>
+    <div className="w-[70px]">Frontend</div>
       <AiFillHtml5 size='25' className="text-frontend-html" />
       <FaCss3Alt size='25' className="text-frontend-css" />
       <BiLogoJavascript size='25' className="text-frontend-js" />
@@ -76,7 +76,7 @@ const Technologies = () => {
     </div>
 
     <div className="flex flex-wrap gap-2 mt-[15px]">
-    <p className="basis-1/6 ">Backend</p>
+    <div className="w-[70px]">Backend</div>
       <BiLogoNodejs size='25' className="text-backend-node "/>
       <FaGolang size='28' className="text-backend-go " />
       <BiLogoPhp size='25' className="text-backend-php "/>
@@ -84,15 +84,15 @@ const Technologies = () => {
     </div>
     
     <div className="flex flex-wrap gap-2 mt-[15px]">
-    <p className="basis-1/6">Database</p>
+    <div className="w-[70px]">Database</div>
       <BiLogoPostgresql size='25' className="text-database-postgresql "/>
       <BiLogoMongodb size='25' className="text-database-mongodb "/>
       <SiMysql size='25' className="text-databse-mysql "/>
     </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
-    <p className="basis-1/6">Utilities</p>
-      <BsGit size='25' className=" text-utils-git "/>
+    <div className="w-[70px]">Utilities </div>
+      <BsGit size='25' className="text-utils-git"/>
       <FaDocker size='25' className="text-utils-docker "/>
     </div>
     </div>
@@ -103,14 +103,18 @@ const Technologies = () => {
 const Bio = () => {
   return (
     <div className="mt-[28px]">
-    <div className="">
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Bio<MdCastForEducation className="inline-block mx-[3px] mb-[3px]" size='20'/></h3>
-    </div>
-    <div className="mt-[5px]">
-    <p className="font-bold dark:text-green-600 text-rose-800 underline">Institute Qualifications:</p>
-    <div className="pl-[50px] -indent-[50px]"><span className="font-bold mr-3">2014:</span>Graphics Designing From <span className="font-bold">Arena Multimedia</span></div>
 
-<div className="pl-[50px] -indent-[50px]"><span className="font-bold mr-3">2018:</span>Software Enginnering From <span className="font-bold">Aptech Education Network.</span></div>
+    <div className="mt-[5px]">
+    <div className="pl-[50px] -indent-[50px] mt-1"><span className="font-bold mr-3">2012:</span>Graphics Designing From <span className="font-bold">Arena Multimedia</span></div>
+
+<div className="pl-[50px] -indent-[50px] mt-1"><span className="font-bold mr-3">2018:</span>Software Enginnering From <span className="font-bold">Aptech Education Network</span></div>
+
+
+<div className="pl-[50px] -indent-[50px] mt-1"><span className="font-bold mr-3">2022:</span>Bachelor&apos;s degree in Economics and Psychology as minor from <span className="font-bold">University of Karachi</span></div>
+
+<div className="pl-[50px] -indent-[50px] mt-1"><span className="font-bold mr-3">2023:</span>Master&apos;s degree in Economics and Mathametical Economics <span className="font-bold">University of Karachi</span></div>
+
     </div>
     </div>
   )
