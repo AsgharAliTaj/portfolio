@@ -23,7 +23,7 @@ const Body = () => {
     <div className="md:flex mt-[20px] md:justify-between">
     <div className="md:basis-3/4 ">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">Asghar Ali Taj</h1>
-      <p className="">Digital Craftsman (Developer / Designer)</p>
+      <p className="tracking-tighter">Digital Craftsman (Developer / Designer)</p>
     </div>
       <ProfilePicture />
     </div>
@@ -57,7 +57,7 @@ const Work = () => {
 
 const Technologies = () => {
   return (
-    <div className='mt-[24px]'>
+    <div className='mt-[28px]'>
 
     <div className="flex flex-col justify-center items-center">
     
@@ -102,9 +102,16 @@ const Technologies = () => {
 
 const Bio = () => {
   return (
-    <div className="mt-[24px]">
+    <div className="mt-[28px]">
+    <div className="">
+    <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Bio<MdCastForEducation className="inline-block mx-[3px] mb-[3px]" size='20'/></h3>
+    </div>
+    <div className="mt-[5px]">
+    <p className="font-bold dark:text-green-600 text-rose-800 underline">Institute Qualifications:</p>
+    <div className="pl-[50px] -indent-[50px]"><span className="font-bold mr-3">2014:</span>Graphics Designing From <span className="font-bold">Arena Multimedia</span></div>
 
-    <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Bio<MdCastForEducation className="inline-block mx-[3px] mb-[3px]" size='20' /> </h3>
+<div className="pl-[50px] -indent-[50px]"><span className="font-bold mr-3">2018:</span>Software Enginnering From <span className="font-bold">Aptech Education Network.</span></div>
+    </div>
     </div>
   )
 }
