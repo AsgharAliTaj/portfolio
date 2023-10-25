@@ -65,13 +65,13 @@ const Technologies = () => {
   return (
     <div className='mt-[28px]'>
 
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col">
     
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
   </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
-    <div className="w-[70px]">Frontend</div>
+    <div className="w-[70px] font-bold">Frontend</div>
       <AiFillHtml5 size='25' className="text-frontend-html" />
       <FaCss3Alt size='25' className="text-frontend-css" />
       <BiLogoJavascript size='25' className="text-frontend-js" />
@@ -82,7 +82,7 @@ const Technologies = () => {
     </div>
 
     <div className="flex flex-wrap gap-2 mt-[15px]">
-    <div className="w-[70px]">Backend</div>
+    <div className="w-[70px] font-bold">Backend</div>
       <BiLogoNodejs size='25' className="text-backend-node "/>
       <FaGolang size='28' className="text-backend-go " />
       <BiLogoPhp size='25' className="text-backend-php "/>
@@ -90,14 +90,14 @@ const Technologies = () => {
     </div>
     
     <div className="flex flex-wrap gap-2 mt-[15px]">
-    <div className="w-[70px]">Database</div>
+    <div className="w-[70px] font-bold">Database</div>
       <BiLogoPostgresql size='25' className="text-database-postgresql "/>
       <BiLogoMongodb size='25' className="text-database-mongodb "/>
       <SiMysql size='25' className="text-databse-mysql "/>
     </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
-    <div className="w-[70px]">Utilities </div>
+    <div className="w-[70px] font-bold">Utilities</div>
       <BsGit size='25' className="text-utils-git"/>
       <FaDocker size='25' className="text-utils-docker "/>
     </div>
