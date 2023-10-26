@@ -8,12 +8,13 @@ import {GrReactjs} from 'react-icons/gr'
 import {SiChakraui,  SiMysql} from 'react-icons/si'
 import {AiFillHtml5} from 'react-icons/ai';
 import {BsGit} from 'react-icons/bs';
+import {IoShareSocialSharp} from 'react-icons/io5';
 
 import ProfilePic from '../assets/profile_pic.jpg';
 
 const Body = () => {
   return (
-    <article className="pt-[60px] md:pt-[65px] max-w-[535px] m-auto px-[20px]">
+    <article>
     <Hero />
     <div className="md:flex mt-[20px] md:justify-between">
     <div className="md:basis-3/4 ">
@@ -36,14 +37,13 @@ const Hero = () => {
       <div className="px-2 text-md text-center justify-center font-normal tracking-tight p-[10px] w-full rounded-md shadow-sm  bg-profile-heroLight dark:bg-profile-heroDark">Hello, I&apos;m a software developer from Pakistan.
       </div>
     </div>
-
   )
 }
 
 const ProfilePicture = () => {
   return (
 <div className="flex justify-center md:block pt-5 md:p-1">
-    <img src={ProfilePic} alt="" className="rounded-full w-[90px] h-[90px] bg-purple-500 shrink-0 border-[2px] border border-white shadow-md  md:basis-1/4" />
+    <img src={ProfilePic} alt="" className="rounded-full w-[100px] h-[100px] bg-green-500 shrink-0 border-[2px] border-[3px] border-white shadow-lg  md:basis-1/4" />
     </div>
   )
 }
@@ -53,7 +53,7 @@ const Work = () => {
   return (
     <div className="mt-[24px]">
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Work<MdOutlineWorkHistory className="inline-block mx-[3px] mb-[3px]" size='20' /> </h3>
-    <p className="tracking-tight text-[16px]  font-normal text-justify leading-relaxed indent-[16px]   hyphens-auto">Asghar Ali Taj is a full stack developer and a freelancer using several cutting edge technologies of the present. He likes to plan everything from scratch and use minimal and consistent approach to the problems of both real-life and coding. When he is not working on a project, He enjoys watching anime, playing games, reading books, hangout with friends and family.</p>
+    <p className="tracking-tight text-[16px]  font-normal text-justify leading-relaxed indent-[16px] hyphens-auto">Asghar Ali Taj is a full stack developer and a freelancer using several cutting edge technologies of the present. He likes to plan everything from scratch and use minimal and consistent approach to the problems of both real-life and coding. When he is not working on a project, He enjoys watching anime, playing games, reading books, hangout with friends and family.</p>
     <div className="flex justify-center align-center mt-3">
       <div className=" cursor-pointer text-[15px] tracking-tighter dark:text-profile-dark text-profile-light bg-pink-600 dark:bg-teal-300 hover:dark:bg-teal-400 hover:bg-pink-700 px-3 py-2 rounded-md hover:mouse-cursor font-bold shadow-sm">My Portfolio<FaPenToSquare className="inline-block mx-[3px] mb-[3px]" size='15' /></div>
     </div>
@@ -67,7 +67,7 @@ const Technologies = () => {
 
     <div className="flex flex-col">
     
-    <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
+    <h3 className="font-bold text-xl  text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
   </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">
@@ -130,9 +130,11 @@ const Likes = () => {
     <div className="mt-[28px]">
 
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">likes<BiSolidLike className="inline-block mx-[3px] mb-[3px]" size='20'/></h3>
-    <div className="indent-[16px]">Art, Music, Playing flute, anime, books, Nature, Programming and learning about new things daily.</div>
+    <div className="indent-[16px] text-justify">Art, Music, Playing flute, anime, books, Nature, Programming and learning about new things daily.</div>
     </div>
   )
 }
+
+
 
 export default Body;
