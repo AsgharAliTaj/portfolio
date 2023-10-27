@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 import {useState, useEffect, useRef} from "react";
 import useDarkSide from '../hooks/useDarkSide';
 
@@ -17,10 +19,10 @@ const NavBar = () => {
   return (
 <nav className="fixed w-full shadow-sm h-auto bg-white/30 dark:bg-profile-dark/50">
   <div className="mx-auto flex  items-center max-w-[768px] justify-between px-5 md:px-10 py-2 md:py-2">
-    <div className="flex mr-8 gap-1">
-      <span><FaLaptopCode size ='24'/></span>
+    <Link to={'/'}><div className="flex mr-8 gap-1">
+      <FaLaptopCode size ='24'/>
       <p className="font-sans font-bold text-[17px] tracking-tighter ">Asghar Ali Taj</p>
-    </div>
+    </div></Link>
     <ul className="hidden grow justify-start gap-6 md:flex text-[13px]">
       <MenuItems />
     </ul>
@@ -88,7 +90,7 @@ const DropDownMenu = () => {
 const MenuItems = () => {
   return (
     <>
-<a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md"><li><FaPenToSquare className="inline-block pb-1" size='18' />Works</li></a>
+<Link to={'/works'} className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md"><li><FaPenToSquare className="inline-block pb-1" size='18' />Works</li></Link>
 
       <a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md" href="https://github.com/AsgharAliTaj/portfolio"><li><AiFillGithub className="inline-block pb-1" size='18'/>Source</li></a>
     </>

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 import {MdOutlineWorkHistory, MdCastForEducation} from 'react-icons/md';
 import {FaPenToSquare , FaGolang} from 'react-icons/fa6';
 import {GiTechnoHeart} from 'react-icons/gi';
@@ -19,7 +21,7 @@ const Body = () => {
     <div className="md:flex mt-[20px] md:justify-between">
     <div className="md:basis-3/4 ">
       <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">Asghar Ali Taj</h1>
-      <p className="tracking-tighter">Digital Craftsman (Developer / Designer)</p>
+      <p className="tracking-tighter">Digital Craftsman ( Developer / Designer )</p>
     </div>
       <ProfilePicture />
     </div>
@@ -55,7 +57,7 @@ const Work = () => {
     <h3 className="font-bold text-xl text-cyan-700 dark:text-pink-400">Work<MdOutlineWorkHistory className="inline-block mx-[3px] mb-[3px]" size='20' /> </h3>
     <p className="tracking-tight text-[16px]  font-normal text-justify leading-relaxed indent-[16px] hyphens-auto">Asghar Ali Taj is a full stack developer and a freelancer using several cutting edge technologies of the present. He likes to plan everything from scratch and use minimal and consistent approach to the problems of both real-life and coding. When he is not working on a project, He enjoys watching anime, playing games, reading books, hangout with friends and family.</p>
     <div className="flex justify-center align-center mt-3">
-      <div className=" cursor-pointer text-[15px] tracking-tighter dark:text-profile-dark text-profile-light bg-pink-600 dark:bg-teal-300 hover:dark:bg-teal-400 hover:bg-pink-700 px-3 py-2 rounded-md hover:mouse-cursor font-bold shadow-sm">My Portfolio<FaPenToSquare className="inline-block mx-[3px] mb-[3px]" size='15' /></div>
+      <Link to={'works'}><div className=" cursor-pointer text-[15px] tracking-tighter dark:text-profile-dark text-profile-light bg-pink-600 dark:bg-teal-300 hover:dark:bg-teal-400 hover:bg-pink-700 px-3 py-2 rounded-md hover:mouse-cursor font-bold shadow-sm">My Portfolio<FaPenToSquare className="inline-block mx-[3px] mb-[3px]" size='15' /></div></Link>
     </div>
     </div>
   )
