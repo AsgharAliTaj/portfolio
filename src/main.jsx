@@ -23,14 +23,13 @@ const router = createHashRouter([
       {
         path: "/",
         element: <Body />,
-
       },
       {
         path: "works",
         element: <Works />,
-      }
-    ]
-  }
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
