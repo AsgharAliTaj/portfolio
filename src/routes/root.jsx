@@ -1,4 +1,4 @@
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet, useNavigation} from "react-router-dom";
 
 import NavBar from "./NavBar";
 import Body from "./Body";
@@ -17,7 +17,7 @@ function Root() {
       </div>
       </div>
     </main>
-  )
+  );
 }
 
 export default Root;

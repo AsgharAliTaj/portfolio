@@ -6,14 +6,15 @@ import Body from './routes/Body';
 import ErrorPage from './error-page';
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
+  HashRouter,
 } from "react-router-dom";
 
 import './index.css'
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
