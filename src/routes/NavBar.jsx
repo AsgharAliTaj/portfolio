@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 import {useState, useEffect, useRef} from "react";
 import useDarkSide from '../hooks/useDarkSide';
@@ -90,7 +90,7 @@ const DropDownMenu = () => {
 const MenuItems = () => {
   return (
     <>
-<Link to={'/works'} className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md"><li><FaPenToSquare className="inline-block pb-1" size='18' />Works</li></Link>
+<NavLink to={'/works'} className={( {isActive}) => isActive? "nav-link-active" : "nav-link"}><li><FaPenToSquare className="inline-block pb-1" size='18' />Works</li></NavLink>
 
       <a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md" href="https://github.com/AsgharAliTaj/portfolio"><li><AiFillGithub className="inline-block pb-1" size='18'/>Source</li></a>
     </>
