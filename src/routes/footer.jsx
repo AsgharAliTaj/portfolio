@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="mt-[45px]">
       <Social />
 
-    <div className="text-center text-gray-500 text-sm max:h-[60px] mt-3" >
+    <div className="text-center text-gray-500 text-sm min-h-[60px] mt-3">
       &copy; {new Date().getFullYear()} Asghar Ali Taj. All Rights Reserved.
     </div>
     </div>
