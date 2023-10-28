@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
 <nav className="fixed w-full shadow-sm h-auto bg-white/30 dark:bg-profile-dark/50">
   <div className="flex items-center max-w-[768px] justify-between mx-auto px-5 md:px-10 py-2 ">
-    <div className="gap-1 hover:text-teal-600 dark:hover:text-pink-400">
+    <div className="gap-1">
     <Link to={'/'}>
       <FaLaptopCode className="inline-block mr-1" size ='22'/>
       <p className="font-bold tracking-tighter inline-block max-[240px]:hidden"> Asghar Ali Taj</p>
@@ -93,9 +93,9 @@ const DropDownMenu = () => {
 const MenuItems = () => {
   return (
     <>
-<NavLink to={'/works'} className={({isActive}) => isActive? "nav-link-active" : "nav-link"}><li><FaPenToSquare className="inline-block pb-1" size='18' />Works</li></NavLink>
+<NavLink to={'/works'} className={({isActive}) => isActive? "nav-link-active" : "nav-link"}><li><FaPenToSquare className="inline-block pb-1" size='20' />Works</li></NavLink>
 
-      <a className="cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md" href="https://github.com/AsgharAliTaj/portfolio"><li><AiFillGithub className="inline-block pb-1" size='18'/>Source</li></a>
+      <a className="nav-link" href="https://github.com/AsgharAliTaj/portfolio"><li><AiFillGithub className="inline-block pb-1" size='20'/>Source</li></a>
     </>
   )
 }

@@ -4,10 +4,28 @@
 
 @layer components {
   .nav-link {
-    @apply cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md 
+    @apply cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md  text-[15px]
   };
+
   .nav-link-active {
-    @apply cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md dark:bg-pink-700 bg-cyan-500
+    @apply cursor-pointer block px-4 py-2 hover:bg-gray-600 hover:text-gray-200 dark:hover:bg-gray-600 rounded-md text-[15px] text-teal-600 dark:text-pink-400 font-bold
+  };
+
+
+  .card-main {
+    @apply  bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700
+  };
+
+  .card-heading {
+    @apply mb-2 text-[18px] font-bold tracking-tight text-profile-textLight dark:text-profile-textDark
+  };
+
+  .card-para {
+    @apply mb-3 font-normal text-sm  text-gray-700 dark:text-gray-400
+  };
+
+  .card-button {
+    @apply inline-flex items-center px-3 py-2  font-medium text-center text-profile-textLight dark:text-profile-textDark rounded-lg bg-teal-500 hover:bg-teal-600 focus:outline-none dark:bg-blue-600 dark:hover:bg-pink-500  dark:bg-pink-700 
   };
 }
 
