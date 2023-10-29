@@ -69,7 +69,7 @@ const Technologies = () => {
 
     <div className="flex flex-col">
     
-    <h3 className="font-bold text-xl  text-cyan-700 dark:text-pink-400">Technologies<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
+    <h3 className="font-bold text-xl  text-cyan-700 dark:text-pink-400">Skills<GiTechnoHeart className="inline-block mx-[3px] mb-[3px]" size='20' /></h3>
   </div>
 
     <div className="flex flex-wrap gap-2  mt-[15px]">

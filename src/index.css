@@ -13,7 +13,7 @@
 
 
   .card-main {
-    @apply  bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700
+    @apply  bg-gray-100 border border-gray-200 rounded-xl shadow dark:bg-zinc-900 dark:border-gray-700
   };
 
   .card-heading {
@@ -25,7 +25,7 @@
   };
 
   .card-button {
-    @apply inline-flex items-center px-3 py-2  font-medium text-center text-profile-textLight dark:text-profile-textDark rounded-lg bg-teal-500 hover:bg-teal-600 focus:outline-none dark:bg-blue-600 dark:hover:bg-pink-500  dark:bg-pink-700 
+    @apply  px-3 py-2  font-medium text-center text-profile-textLight dark:text-profile-textDark rounded-lg bg-teal-500 hover:bg-teal-600 focus:outline-none dark:bg-blue-600 dark:hover:bg-pink-500 dark:bg-pink-700 
   };
 }
 

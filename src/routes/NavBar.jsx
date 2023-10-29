@@ -29,7 +29,7 @@ const NavBar = () => {
     <ul className="hidden basis-2/3  md:flex gap-6 text-[13px]">
       <MenuItems />
     </ul>
-    <div className="flex flex-wrap gap-1">
+    <div className="flex flex-wrap gap-3">
         <ThemeIcon />
       <div className="block md:hidden">
         <DropDownMenu />
